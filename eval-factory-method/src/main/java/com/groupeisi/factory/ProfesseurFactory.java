@@ -2,10 +2,10 @@ package com.groupeisi.factory;
 
 public abstract class ProfesseurFactory {
 
-    public Professeur create(ProfesseurEnum type, String nom, String prenom, String diplome) {
-        Professeur professeur = createProfesseur(type, nom, prenom, diplome);
+    public Professeur create(String nom, String prenom, String diplome, String titreOuEntreprise) {
+        Professeur professeur = createProfesseur(nom, prenom, diplome, titreOuEntreprise);
         professeur.create();
         return professeur;
     }
-    protected abstract Professeur createProfesseur(ProfesseurEnum type, String nom, String prenom, String diplome);
+    protected abstract Professeur createProfesseur(String nom, String prenom, String diplome, String titreOuEntreprise);
 }

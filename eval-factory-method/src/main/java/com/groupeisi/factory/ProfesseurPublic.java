@@ -16,7 +16,7 @@ public class ProfesseurPublic implements Professeur{
 
     @Override
     public void create() {
-        // Logique de création pour ProfesseurPublic
+        System.out.println("Professeur Public: " + getNom() + " " + getPrenom() + ", Diplome: " + getDiplome());
     }
 
     @Override
